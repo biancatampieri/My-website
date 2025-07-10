@@ -1,63 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*NAVBAR */
+.custom-navbar {
+  background-color: #8a9b68;
 }
 
-.background {
-  background-image: url(../img/Griglia_sfondo_verde.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
-  width: 100vw;        /* larghezza intera viewport */
-  min-height: 100vh;   /* altezza intera viewport */
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;  /* evita scroll orizzontale indesiderato */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: #222222; /* colore testo */
 }
 
-h1{
-    font-size: 40px;
-    color: #222222;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+  color: #f8f9fa; /* colore al passaggio del mouse */
 }
 
-p{
-    font-size: 16px;
-    color: #222222;   
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
-button{
-    background-color: #dc0073;
-    color: #ffffff;
-    font-family: "Work Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 
-}
-
-div{
-
-    height: fit-content;
-    width: fit-content;
-}
-
-/* HERO SECTION */
-.hero {
+/*SEZIONE HERO */
+  .hero{
   width: 100%;
   padding: 60px 20px;
   overflow: hidden; /* Previene scroll orizzontale */
-}
+  position: relative;
+  z-index: 1;
+  }
 
-.hero-container {
+  .hero-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -67,20 +34,18 @@ div{
   margin: 0 auto;
   padding: 40px 20px;
   box-sizing: border-box;
-}
+  }
 
-/* Colonna Immagine */
-
-.hero-image {
+  /* Colonna Immagine */
+  .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   min-width: 250px;
   max-width: 300px;
-}
-
-.hero-image img {
+  }
+  .hero-image img {
   width: 100%;
   aspect-ratio: 1 / 1;
   height: auto;
@@ -89,18 +54,17 @@ div{
   border-radius: 50%;
   border: 5px solid #ddd;
   display: block;
-}
+  }
 
-/* Colonna Testo */
-.hero-text {
+  /* Colonna Testo */
+  .hero-text {
   flex: 1;
   min-width: 280px;
   max-width: 600px;
-}
+  }
 
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -108,41 +72,144 @@ div{
     padding: 20px;
   }
 
+
   .hero-text, .hero-image {
     width: 100%;
   }
+
 
   .hero-image img {
     max-width: 100%;
   height: auto;
 }
-}
+  }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
-}
 
-.navbar {
+/*SFONDO PAGINA */
+
+.sfondo-immagine {
   position: relative;
+  overflow: hidden;
+  min-height: 300px; /* essenziale se non hai molto contenuto */
+  padding: 60px 20px;
+  z-index: 1;
+  color: #000;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.sfondo-immagine::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("../img/Griglia_sfondo_bianco.jpg"); /* verifica il percorso */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
 }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
+/*FONTS */
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.nav-links li a:hover {
-  color: #ffd700;
+.work-sans-body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
+/* BASE HEADINGS – Mobile first */
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* TABLET – da 576px in su */
+@media (min-width: 576px) {
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 2rem; }
+  h4 { font-size: 1.7rem; }
+  h5 { font-size: 1.4rem; }
+  h6 { font-size: 1.1rem; }
+}
+
+/* DESKTOP – da 992px in su */
+@media (min-width: 992px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 2.5rem; }
+  h4 { font-size: 2rem; }
+  h5 { font-size: 1.5rem; }
+  h6 { font-size: 1.25rem; }
+}
+
+/* Font per il testo normale */
+body, p, span, li, a, div {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*BOTTONI */
+ .btn-custom {
+    background-color: #dc0073 !important;
+    color: white !important;
+  }

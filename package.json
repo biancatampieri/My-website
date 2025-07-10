@@ -1,0 +1,23 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "Questo è un progetto che funge da CV e portfolio dei miei progetti di UX/UI. Serve a farmi conoscere e può essere utilizzato per presentare il mio elaborato nel tempo.",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass scss/style.scss css/style.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biancatampieri/My-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biancatampieri/My-website/issues"
+  },
+  "homepage": "https://github.com/biancatampieri/My-website#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
