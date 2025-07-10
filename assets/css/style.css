@@ -1,0 +1,38 @@
+body {
+    background-color: #8a9b68;
+}
+
+h1{
+    font-size: 40px;
+    color: #222222;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-size: 16px;
+    color: #222222;   
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+    background-color: #dc0073;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+div{
+
+    height: fit-content;
+    width: fit-content;
+}
+
+
