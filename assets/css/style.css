@@ -1,9 +1,20 @@
-body {
-  
-  background-image: url(assets/img/Griglia_sfondo_bianco.jpg);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url(../img/Griglia_sfondo_verde.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+  width: 100vw;        /* larghezza intera viewport */
+  min-height: 100vh;   /* altezza intera viewport */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* evita scroll orizzontale indesiderato */
 }
 
 h1{
@@ -41,28 +52,43 @@ div{
 
 /* HERO SECTION */
 .hero {
-  background-color: #f5f5f5;
+  width: 100%;
   padding: 60px 20px;
+  overflow: hidden; /* Previene scroll orizzontale */
 }
 
 .hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* Serve per il responsive */
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 /* Colonna Immagine */
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
 .hero-image img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;         /* Mantiene l'immagine riempita */
-  object-position: center top; /* Sposta l'immagine verso l'alto */
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid #ddd;
+  display: block;
 }
 
 /* Colonna Testo */
@@ -77,13 +103,19 @@ div{
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
   }
 
   .hero-image img {
-    width: 200px;
-    height: 200px;
-  }
+    max-width: 100%;
+  height: auto;
+}
 }
 
 .header {
