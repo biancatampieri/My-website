@@ -1,4 +1,12 @@
-@use 'colors';
+@use 'colors'as *;
 @use 'typography';
-@use 'variables' ;
-@use 'global'
+@use 'variables' as *;
+@use 'global';
+
+@use 'bootstrap/scss/bootstrap' with (
+  $theme-colors: $theme-colors,
+  $btn-border-radius: $btn-border-radius,
+  $btn-padding-y: $btn-padding-y,
+  $btn-padding-x: $btn-padding-x,
+  $btn-primary-color: $btn-primary-color
+);
