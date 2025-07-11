@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -52,9 +53,13 @@
     padding: 20px;
   }
 
-  .hero-text,
   .hero-image {
     width: 100%;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-top: 30px; // 👉 questo è ciò che separa i blocchi
   }
 
   .hero-image img {
