@@ -1,0 +1,74 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans-body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Font stack
+$font-heading: "Bebas Neue", sans-serif;
+$font-body: "Work Sans", sans-serif;
+
+// Base sizes
+$font-size-base: 16px;
+$font-size-xs: 14px;
+
+// Heading styles
+h1, h2, h3, h4, h5 {
+  font-family: $font-heading;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.5em 0;
+}
+
+h1 {
+  font-size: 3rem; // ~48px
+}
+
+h2 {
+  font-size: 2.5rem; // ~40px
+}
+
+h3 {
+  font-size: 2rem; // ~32px
+}
+
+h4 {
+  font-size: 1.5rem; // ~24px
+}
+
+h5 {
+  font-size: 1.25rem; // ~20px
+}
+
+// Body text
+.body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+}
+
+.body-bold {
+  @extend .body;
+  font-weight: 700;
+}
+
+.body-underline {
+  @extend .body;
+  text-decoration: underline;
+}
+
+.body-xs {
+  font-family: $font-body;
+  font-size: $font-size-xs;
+  font-weight: 400;
+  line-height: 1.5;
+}

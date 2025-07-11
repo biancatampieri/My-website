@@ -1,90 +1,143 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bianca Tampieri - UX/UI Designer</title>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"> 
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
-      <div class="container">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Su di me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
       </div>
     </nav>
 
-    <!-- Hero + Sfondo -->
-    <section class="sfondo-immagine">
-      <div class="container">
-        <section class="hero">
-          <div class="hero-container">
-            <div class="hero-text">
-              <p>Ciao, sono Bianca.</p>
-              <h1>Nel mio laboratorio di UX/UI cerco una semplicità che funzioni.</h1>
-              <button class="btn btn-custom">Guarda i miei progetti</button>
-            </div>
-            <div class="hero-image">
-              <img src="assets/img/Foto Bianca.jpg" alt="Foto di Bianca">
-            </div>
-          </div>
-        </section>
+    <!--HERO SECTION-->
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1>Custom jumbotron</h1>
+        <p class="body">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
       </div>
-    </section>
+    </div>
 
-<!-- Bio -->
-<section class="bio">
+    <!--BIO-->
+    <div class="container py-5">
+  <div class="card text-center p-4">
+    <div class="card-body">
+      <h2 class="card-title">Titolo accattivante</h2>
+      <p class="card-text">Un paragrafo descrittivo che spiega cosa fa il tuo sito o servizio.</p>
+      <a href="#" class="btn btn-primary">Scopri di più</a>
+    </div>
+  </div>
+</div>
+
+    <!--PROGETTI-->
+    <section class="py-5 bg-light">
   <div class="container">
-    <div class="bio-content">
-      <h3>La mia bio</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, adipisci quod? Veniam blanditiis dignissimos rem officiis, ab iste expedita, saepe illo mollitia facilis sunt possimus quibusdam, perferendis eveniet aperiam natus?</p>
+    <div class="row g-4">
+      
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Testo descrittivo della prima card. Contenuto di esempio.</p>
+            <a href="#" class="btn btn-primary">Azione</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Testo descrittivo della seconda card. Contenuto di esempio.</p>
+            <a href="#" class="btn btn-primary">Azione</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Testo descrittivo della terza card. Contenuto di esempio.</p>
+            <a href="#" class="btn btn-primary">Azione</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio">
-      <div class="container">
-        <h3>Dai un'occhiata ai miei progetti</h3>
-        <div class="row">
-          <!-- Ripeti questa card per ogni progetto -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Testo descrittivo del progetto.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Altre card qui -->
+    <!--FOOTER-->
+
+<footer class="bg-dark text-light py-5">
+  <div class="container">
+    <div class="row align-items-start gy-4">
+
+      <!-- Parte Sinistra: Testo + Social -->
+      <div class="col-12 col-md-6">
+        <h5>La tua azienda</h5>
+        <p>Seguici sui social e resta aggiornato sulle nostre novità.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
         </div>
       </div>
-    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Parte Destra: Form Contatti -->
+      <div class="col-12 col-md-6">
+        <h5>Contattaci</h5>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Il tuo nome">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="La tua email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Il tuo messaggio"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Invia</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
