@@ -1,0 +1,23 @@
+.bio-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bio-left,
+.bio-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.bio-divider {
+  width: 4px;
+  background-color: black;
+  height: 100%;
+}
+
+.bio-wrapper {
+  border: 4px solid black;
+    margin: 0 auto;
+      max-width: 1140px;
+}

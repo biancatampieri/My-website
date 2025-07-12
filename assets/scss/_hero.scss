@@ -1,0 +1,14 @@
+@use 'colors' as *;
+
+.hero-section {
+  background-color: $color-primary;
+}
+
+.hero-image-wrapper {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid black;
+}

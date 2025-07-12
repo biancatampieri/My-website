@@ -1,0 +1,17 @@
+@use 'colors' as *;
+
+.btn-primary {
+  background-color: $color-secondary !important;
+  color: #fff !important;
+  border: 2px solid $color-dark !important;
+  box-shadow: 4px 4px 0 $color-dark !important;
+  border-radius: 0.2rem;
+}
+
+.btn-secondary {
+  background-color: $color-accent !important;
+  color: #fff !important;
+  border: 2px solid $color-dark !important;
+  box-shadow: 4px 4px 0 $color-dark !important;
+  border-radius: 0.2rem;
+}

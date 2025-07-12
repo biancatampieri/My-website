@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# CSS output
+*.css
+*.css.map
+
+# Build folder (se esiste)
+dist/
+build/
+
+# Mac/Linux system files
+.DS_Store
+
+# VS Code config (opzionale)
+.vscode/

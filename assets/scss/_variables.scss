@@ -1,21 +1,21 @@
 @use 'colors' as *;
 
-// Sovrascrivi variabili di Bootstrap con i tuoi valori
-$theme-colors: $theme-colors;
+// Sovrascrivi variabili Bootstrap PRIMA di importarlo
+$theme-colors: (
+  "primary": $color-primary,
+  "secondary": $color-secondary,
+  "accent": $color-accent,
+  "dark": $color-dark,
+  "light": #f8f9fa
+);
 
-// Personalizzazione bottoni
+// Personalizzazione bottoni (valori usati da Bootstrap)
 $btn-border-radius: 2rem;
 $btn-padding-y: 0.75rem;
 $btn-padding-x: 1.5rem;
-$btn-primary-color: #fff; // colore testo nei bottoni primary
+$btn-primary-color: #fff;
 
-.btn-primary {
-  background-color: $color-secondary !important;
-  color: #fff !important;
-  border-color: transparent !important;
-  border-radius: 0.5rem;
-}
-
+// Navbar personalizzata (lo stile verrà usato altrove)
 .custom-navbar {
-  background-color: $color-primary !important; 
+  background-color: $color-primary !important;
 }
