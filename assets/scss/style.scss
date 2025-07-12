@@ -6,6 +6,7 @@
 @use 'hero';
 @use 'bio';
 @use 'projects';
+@use 'navbar';
 
 // Solo dopo: import di Bootstrap (non può stare in mezzo agli @use)
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
