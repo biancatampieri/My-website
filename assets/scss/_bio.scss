@@ -1,25 +1,13 @@
 @use 'colors' as *;
 
-.bio-left, .bio-right {
-  flex: 1;
-  padding: 4rem 0;
-}
-
-.bio-left {
-  background-color: #fff; /* o quello che hai */
+.half-bg-section {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, $color-light 50%, $color-accent 50%);
 }
 
-.bio-right {
-  background-color: #00a6e2;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.bio-container-left,
-.bio-container-right {
-  width: 100%;
-  max-width: 600px; /* oppure 1140px, o usa 'container' */
-  padding: 0 1rem;
+@media (max-width: 767.98px) {
+  .half-bg-section {
+    background: linear-gradient(to bottom, $color-light 50%, $color-accent 50%);
+  }
 }
