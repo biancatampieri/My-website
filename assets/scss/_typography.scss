@@ -64,3 +64,12 @@ h5 {
   font-size: $font-size-xs;
   line-height: 1.5;
 }
+
+.heading-h5 {
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  margin: 0; // opzionale: per evitare spazi extra
+}

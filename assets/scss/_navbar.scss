@@ -22,10 +22,11 @@
   }
 }
 
-nav.navbar .nav-link.nav-h5 {
-  font-family: $font-heading !important;
-  font-size: 1.25rem !important;
-  font-weight: 400 !important;
-  line-height: 1.1 !important;
-  letter-spacing: 0.5px !important;
-}
+ // 🔥 FORZA font su nav-link
+  .nav-link {
+    font-family: $font-heading !important;
+    font-size: 1.25rem !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+    letter-spacing: 0.5px !important;
+  }
