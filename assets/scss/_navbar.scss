@@ -1,4 +1,5 @@
 @use 'colors' as *;
+@use 'typography' as *;
 
 .custom-navbar {
   position: sticky;
@@ -21,9 +22,10 @@
   }
 }
 
-.navbar .nav-link {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.1;
+nav.navbar .nav-link.nav-h5 {
+  font-family: $font-heading !important;
+  font-size: 1.25rem !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  letter-spacing: 0.5px !important;
 }
