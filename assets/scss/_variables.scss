@@ -10,7 +10,12 @@ $btn-padding-x: 1.5rem;
 $btn-primary-color: #fff; // colore testo nei bottoni primary
 
 .btn-primary {
-  background-color: $color-primary !important;
+  background-color: $color-secondary !important;
   color: #fff !important;
-  border-radius: 2rem;
+  border-color: transparent !important;
+  border-radius: 0.5rem;
+}
+
+.custom-navbar {
+  background-color: $color-primary !important; 
 }

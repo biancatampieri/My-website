@@ -53,6 +53,17 @@ h5 {
   line-height: 1.5;
 }
 
+.btn-primary {
+  background-color: #dc0073 !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  border-radius: 0.5rem;
+}
+
+.custom-navbar {
+  background-color: #8a9b68 !important;
+}
+
 body {
   background-image: url("../img/Griglia_sfondo_bianco.jpg");
   background-size: cover;

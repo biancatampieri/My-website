@@ -1,12 +1,11 @@
-@use 'colors'as *;
-@use 'typography';
+@use 'colors' as *;
 @use 'variables' as *;
+@use 'typography';
 @use 'global';
+@use 'buttons';
+@use 'hero';
+@use 'bio';
+@use 'projects';
 
-@use 'bootstrap/scss/bootstrap' with (
-  $theme-colors: $theme-colors,
-  $btn-border-radius: $btn-border-radius,
-  $btn-padding-y: $btn-padding-y,
-  $btn-padding-x: $btn-padding-x,
-  $btn-primary-color: $btn-primary-color
-);
+// Solo dopo: import di Bootstrap (non può stare in mezzo agli @use)
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
