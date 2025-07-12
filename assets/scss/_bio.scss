@@ -1,23 +1,25 @@
-.bio-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
+@use 'colors' as *;
 
-.bio-left,
-.bio-right {
+.bio-left, .bio-right {
   flex: 1;
-  padding: 20px;
+  padding: 4rem 0;
 }
 
-.bio-divider {
-  width: 4px;
-  background-color: black;
-  height: 100%;
+.bio-left {
+  background-color: #fff; /* o quello che hai */
+  display: flex;
+  justify-content: flex-end;
 }
 
-.bio-wrapper {
-  border: 4px solid black;
-    margin: 0 auto;
-      max-width: 1140px;
+.bio-right {
+  background-color: #00a6e2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bio-container-left,
+.bio-container-right {
+  width: 100%;
+  max-width: 600px; /* oppure 1140px, o usa 'container' */
+  padding: 0 1rem;
 }
