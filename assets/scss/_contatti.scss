@@ -1,0 +1,73 @@
+@use 'colors' as *;
+@use 'typography' as *;
+
+.contatti-form-wrapper {
+  padding-block: 5rem;
+  max-width: 720px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    text-align: left;
+    font-family: $font-heading;
+    color: $color-dark;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    label {
+      font-weight: 700;
+      font-family: $font-body;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: $color-dark;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid $color-dark;
+      border-radius: 0;
+      background-color: #fff;
+      font-family: $font-body;
+      font-size: 1rem;
+      color: $text-color;
+
+      &:focus {
+        outline: none;
+        box-shadow: 4px 4px 0 $color-dark;
+        border-color: $color-dark;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button[type="submit"] {
+      align-self: start;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid $color-dark;
+      background-color: $color-secondary;
+      color: #fff;
+      font-family: $font-heading;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        background-color: darken($color-secondary, 8%);
+        box-shadow: 4px 4px 0 $color-dark;
+      }
+    }
+  }
+}
