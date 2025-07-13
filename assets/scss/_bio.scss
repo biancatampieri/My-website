@@ -11,3 +11,15 @@
     background: linear-gradient(to bottom, $color-light 50%, $color-primary 50%);
   }
 }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
