@@ -32,13 +32,8 @@
   }
 
 .left-section {
-  background-color: $color-light;
+  background-image: url(../img/Griglia\ quadrata.jpg);
   border-bottom: 2px solid $color-dark;
-
-  // Aggiungiamo il bordo sinistro solo su desktop
-  @media (min-width: 768px) {
-    border-left: 2px solid $color-dark;
-  }
 
   .inner-wrapper {
     margin-left: auto;
@@ -46,15 +41,19 @@
   }
 }
 
-  .right-section {
-    background-color: $color-primary;
-        border-bottom: 2px solid $color-dark;
+.right-section {
+  background-color: $color-primary;
+  border-bottom: 2px solid $color-dark;
 
-    .inner-wrapper {
-      margin-right: auto; // spinge verso il centro
-      text-align: left;
-    }
+  @media (min-width: 768px) {
+    border-left: 2px solid $color-dark; // ← Funziona e si vede
   }
+
+  .inner-wrapper {
+    margin-right: auto;
+    text-align: left;
+  }
+}
 
   @media (max-width: 767.98px) {
     flex-direction: column;
@@ -68,6 +67,7 @@
         max-width: none;
         margin: 0 auto;
         text-align: center;
+
       }
     }
   }
@@ -81,6 +81,25 @@
 }
 
 .items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon-box {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 4px 0 $color-dark;
+}
+
+.content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.inner-wrapper {
   display: flex;
   flex-direction: column;
   gap: 40px;

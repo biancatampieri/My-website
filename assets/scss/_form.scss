@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'typography';
+
+.brutalist-form {
+  border: 3px solid black;
+  padding: 2rem;
+  background-color: $white; // usa colore da _colors.scss
+  box-shadow: 8px 8px 0px black;
+  max-width: 600px;
+  margin: auto;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-family: $font-heading; // esempio da _typography.scss
+  }
+
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $font-label;
+  }
+
+  .form-control,
+  .form-select {
+    border: 2px solid black;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: $white;
+
+    &:focus {
+      border-color: black;
+      box-shadow: none;
+      background-color: lighten($gray-100, 5%);
+    }
+  }
+
+  .btn-brutal {
+    background-color: $yellow; // esempio da _colors.scss
+    color: black;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px black;
+    font-weight: bold;
+    border-radius: 0;
+    transition: transform 0.1s;
+    font-family: $font-button;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: darken($yellow, 5%);
+    }
+  }
+}
