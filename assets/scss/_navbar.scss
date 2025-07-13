@@ -23,10 +23,31 @@
 }
 
  // 🔥 FORZA font su nav-link
-  .nav-link {
-    font-family: $font-heading !important;
-    font-size: 1.25rem !important;
-    font-weight: 400 !important;
-    line-height: 1.1 !important;
-    letter-spacing: 0.5px !important;
-  }
+.nav-link {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
+
+  .navbar-logo {
+  height: 64px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-style {
+  font-family: $font-body;
+  font-size: $font-size-base; // come il bottone
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}
