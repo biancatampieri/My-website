@@ -1,15 +1,28 @@
 @use 'colors' as *;
 @use 'typography' as *;
 
-// OVERRIDE VARIABILI DI BOOTSTRAP PRIMA DELL'IMPORT
-$input-border-width: 2px;
-$input-border-radius: 0;
-$input-border-color: $color-dark;
-$input-focus-box-shadow: 0 0 0 2px $color-dark;
-$input-focus-border-color: $color-dark;
+form.form-custom input.form-control,
+form.form-custom textarea.form-control {
+  border: 2px solid $color-dark !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease-in-out;
 
-// Eventuali stili extra
-.form-custom input.form-control,
-.form-custom textarea.form-control {
-  box-shadow: none; // Per disattivare animazioni browser (opzionale)
+  &:hover,
+  &:focus {
+    box-shadow: 4px 4px 0 $color-dark !important;
+  }
+}
+
+.form-custom {
+  // Stile per le LABEL (bold)
+  label {
+    @extend .body-bold;
+  }
+
+  // Stile per il testo negli input e textarea
+  input.form-control,
+  textarea.form-control {
+    @extend .body;
+  }
 }

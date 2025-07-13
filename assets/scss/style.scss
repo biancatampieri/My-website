@@ -1,3 +1,10 @@
+// ⚠️ IMPORTA Bootstrap usando @use e passa le variabili se servono
+@use '../../node_modules/bootstrap/scss/bootstrap' with (
+  $border-radius: 0,
+  $input-border-width: 2px
+);
+
+// Poi i tuoi file locali
 @use 'colors' as *;
 @use 'variables' as *;
 @use 'typography';
@@ -8,6 +15,3 @@
 @use 'projects';
 @use 'navbar';
 @use 'contatti';
-
-// Solo dopo: import di Bootstrap (non può stare in mezzo agli @use)
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';

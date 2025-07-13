@@ -33,20 +33,20 @@
 
         <!-- NAV LINKS -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-<li class="nav-item">
-  <a class="nav-link nav-link-style active" aria-current="page" href="index.html">Home</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link nav-link-style" href="cv.html">Chi sono</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link nav-link-style" href="contatti.html">Progetti</a>
-</li>
-             <li class="nav-item">
-            <a href="#" class="btn btn-secondary-sm">Contattami</a>
-            </li>
-          </ul>
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+  <li class="nav-item">
+    <a class="nav-link nav-link-style active" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-style" href="cv.html">CV</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-style" href="/index.html#progetti">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a href="contatti.html" class="btn btn-secondary-sm">Contattami</a>
+  </li>
+</ul>
         </div>
       </div>
     </nav>
@@ -55,8 +55,8 @@
 <main class="py-5">
   <div class="container">
     <h1 class="mb-4 text-center">Vuoi inviarmi un messaggio?</h1>
-    <div class="form-custom">
-  <form id="contact-form">
+
+    <form id="contact-form" class="form-custom">
       <div class="mb-3">
         <label for="name" class="form-label">Nome:</label>
         <input type="text" id="name" name="from_name" class="form-control" required>
@@ -74,44 +74,23 @@
 
       <button type="submit" class="btn btn-primary">Invia</button>
     </form>
-</div>
   </div>
 </main>
 
-    <!--FOOTER-->
+<!--FOOTER-->
 
 <footer class="bg-dark text-light py-5">
-  <div class="container">
-    <div class="row align-items-start gy-4">
-
-      <!-- Parte Sinistra: Testo + Social -->
-      <div class="col-12 col-md-6">
-        <h5>CONTATTI</h5>
-        <p>Mi trovi anche qui</p>
-        <div class="d-flex gap-3">
-          <a href="#" class="text-light"><i class="bi bi-linkedin fs-1"></i></a>
-          <a href="#" class="text-light"><i class="bi bi-github fs-1"></i></a>
-        </div>
-      </div>
-
-      <!-- Parte Destra: Form Contatti -->
-      <div class="col-12 col-md-6">
-        <h5>MANDAMI UN MESSAGGIO</h5>
-        <form>
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Il tuo nome">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" placeholder="La tua email">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="3" placeholder="Il tuo messaggio"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Invia</button>
-        </form>
-      </div>
-
+  <div class="container text-center">
+    <h5 class=text-light>MI TROVI ANCHE QUI</h5>
+    <div class="d-flex justify-content-center gap-3 mb-3">
+<a href="https://www.linkedin.com/in/biancatampieri/" class="text-light" target="_blank" rel="noopener noreferrer">
+  <i class="bi bi-linkedin fs-1"></i>
+</a>
+<a href="https://github.com/biancatampieri" class="text-light" target="_blank" rel="noopener noreferrer">
+  <i class="bi bi-github fs-1"></i>
+</a>
     </div>
+    <div class="body-xs text-light">©2025 Bianca Tampieri</div>
   </div>
 </footer>
 
