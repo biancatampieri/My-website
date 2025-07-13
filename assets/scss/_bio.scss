@@ -102,5 +102,10 @@
 .inner-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+}
+
+.paragraph-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
