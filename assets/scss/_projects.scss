@@ -2,4 +2,20 @@
 
 .progetti-section {
   background-image: url(../img/Griglia\ quadrata.jpg); 
+  border: 2px solid $color-dark;
+}
+
+.custom-card {
+  background-color: $color-primary !important;
+  border: 2px solid $color-dark !important;
+  border-radius: 0 !important;
+  box-shadow: 4px 4px 0 $color-dark !important;
+}
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
