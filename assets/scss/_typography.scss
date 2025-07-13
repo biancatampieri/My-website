@@ -2,45 +2,10 @@
 $font-heading: "Righteous", sans-serif;
 $font-body: "Montserrat", sans-serif;
 
-.body {
-  font-family: $font-body;
-  font-size: 16px;
-}
+// Base sizes (ingranditi)
+$font-size-base: 18px;
+$font-size-xs: 16px;
 
-
-// Base sizes
-$font-size-base: 16px;
-$font-size-xs: 14px;
-
-// Heading styles
-h1, h2, h3, h4, h5 {
-  font-family: $font-heading;
-  font-weight: 400;
-  line-height: 1.1;
-  margin: 0 0 0.5em 0;
-}
-
-h1 {
-  font-size: 5rem; // ~48px
-}
-
-h2 {
-  font-size: 2.5rem; // ~40px
-}
-
-h3 {
-  font-size: 2rem; // ~32px
-}
-
-h4 {
-  font-size: 1.5rem; // ~24px
-}
-
-h5 {
-  font-size: 1.25rem; // ~20px
-}
-
-// Body text
 .body {
   font-family: $font-body;
   font-size: $font-size-base;
@@ -49,6 +14,35 @@ h5 {
   color: #333;
 }
 
+// Heading styles (ingranditi)
+h1, h2, h3, h4, h5 {
+  font-family: $font-heading;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.5em 0;
+}
+
+h1 {
+  font-size: 6rem; // ~60px
+}
+
+h2 {
+  font-size: 3rem; // ~48px
+}
+
+h3 {
+  font-size: 2.5rem; // ~40px
+}
+
+h4 {
+  font-size: 2rem; // ~32px
+}
+
+h5 {
+  font-size: 1.5rem; // ~24px
+}
+
+// Varianti corpo (ingrandite)
 .body-bold {
   @extend .body;
   font-weight: 700;
@@ -65,11 +59,12 @@ h5 {
   line-height: 1.5;
 }
 
+// Variante heading h5 (ingrandita)
 .heading-h5 {
   font-family: $font-heading;
-  font-size: 1.25rem;
+  font-size: 1.5rem; // ~24px
   font-weight: 400;
   line-height: 1.1;
   letter-spacing: 0.5px;
-  margin: 0; // opzionale: per evitare spazi extra
+  margin: 0;
 }
