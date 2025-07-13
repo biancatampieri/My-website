@@ -109,3 +109,28 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 40px; // ← distanza tra h2 e il blocco items
+}
+
+.item {
+  display: flex;
+  align-items: flex-start; // ← allinea immagine e testo in alto
+  gap: 20px;
+  text-align: left;        // ← allinea il testo a sinistra
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0; // ← nessuno spazio tra i due <p>
+}
+
+.item-text p {
+  margin: 0;
+  padding: 0;
+}
