@@ -1,0 +1,42 @@
+@use 'colors' as *;
+
+.progetti-section {
+  background-color: $color-light; 
+  border-bottom: 2px solid $color-dark;
+
+  h2 {
+    margin-bottom: 40px; // Spazio tra titolo e griglia di card
+  }
+
+  .container {
+    margin-bottom: 40px; // Spazio tra questa sezione e quella successiva
+  }
+}
+
+.custom-card {
+  background-color: $color-primary !important;
+  border: 2px solid $color-dark !important;
+  border-radius: 0 !important;
+  box-shadow: 4px 4px 0 $color-dark !important;
+
+  width: 100%;
+  max-width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: 360px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 320px;
+  }
+
+  margin-bottom: 40px; // Gap verticale tra le card (utile anche fuori da .row)
+}
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

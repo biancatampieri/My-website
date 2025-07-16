@@ -1,0 +1,28 @@
+@use 'colors' as *;
+@use 'typography' as *;
+
+form.form-custom input.form-control,
+form.form-custom textarea.form-control {
+  border: 2px solid $color-dark !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 4px 4px 0 $color-dark !important;
+  }
+}
+
+.form-custom {
+  // Stile per le LABEL (bold)
+  label {
+    @extend .body-bold;
+  }
+
+  // Stile per il testo negli input e textarea
+  input.form-control,
+  textarea.form-control {
+    @extend .body;
+  }
+}

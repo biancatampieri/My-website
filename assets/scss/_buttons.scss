@@ -1,0 +1,40 @@
+@use 'colors' as *;
+@use 'typography' as *; // per accedere a $font-heading
+
+.btn-primary {
+  background-color: $color-secondary !important;
+  color: #fff !important;
+  border: 2px solid $color-dark !important;
+  box-shadow: none !important;
+  border-radius: 0.125rem;
+font-family: $font-heading !important;
+font-size: $font-size-base !important;
+font-weight: 400 !important;
+  padding: 0.75rem 1.5rem;
+
+  &:hover {
+    box-shadow: 4px 4px 0 $color-dark !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-accent !important;
+  color: $color-dark !important;
+  border: 2px solid $color-dark !important;
+  box-shadow: none !important;
+  border-radius: 0.125rem;
+font-family: $font-heading !important;
+font-size: $font-size-base !important;
+font-weight: 400 !important;
+  padding: 0.75rem 1.5rem;
+
+  &:hover {
+    box-shadow: 4px 4px 0 $color-dark !important;
+  }
+}
+
+// 🔹 Nuovo bottone secondario piccolo
+.btn-secondary-sm {
+  @extend .btn-secondary; // eredita tutto
+  padding: 0.2rem 1rem !important; // meno padding
+}

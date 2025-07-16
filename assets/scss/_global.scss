@@ -1,0 +1,19 @@
+body {
+  background-image: url('../img/Griglia quadrata.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.spacing-y {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+footer {
+  width: 100%;
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 3rem 0;
+}

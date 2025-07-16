@@ -1,0 +1,136 @@
+@use 'colors' as *;
+
+.bio-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left-section,
+  .right-section {
+    flex: 1 1 50%;
+    padding: 60px 20px;
+
+    .inner-wrapper {
+      width: 100%;
+    }
+
+    // Max-width = metà dei container Bootstrap
+    @media (min-width: 576px) {
+      .inner-wrapper { max-width: 270px; }
+    }
+    @media (min-width: 768px) {
+      .inner-wrapper { max-width: 360px; }
+    }
+    @media (min-width: 992px) {
+      .inner-wrapper { max-width: 480px; }
+    }
+    @media (min-width: 1200px) {
+      .inner-wrapper { max-width: 570px; }
+    }
+    @media (min-width: 1400px) {
+      .inner-wrapper { max-width: 660px; }
+    }
+  }
+
+.left-section {
+  background-image: url(../img/Griglia\ quadrata.jpg);
+  border-bottom: 2px solid $color-dark;
+
+  .inner-wrapper {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.right-section {
+  background-color: $color-primary;
+  border-bottom: 2px solid $color-dark;
+
+  @media (min-width: 768px) {
+    border-left: 2px solid $color-dark; // ← Funziona e si vede
+  }
+
+  .inner-wrapper {
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+
+    .left-section,
+    .right-section {
+      flex: 1 1 100%;
+      padding: 40px 20px;
+
+      .inner-wrapper {
+        max-width: none;
+        margin: 0 auto;
+        text-align: center;
+
+      }
+    }
+  }
+}
+
+// contenuto
+.item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.icon-box {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 4px 0 $color-dark;
+}
+
+.content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.inner-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 40px; // ← distanza tra h2 e il blocco items
+}
+
+.item {
+  display: flex;
+  align-items: flex-start; // ← allinea immagine e testo in alto
+  gap: 20px;
+  text-align: left;        // ← allinea il testo a sinistra
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0; // ← nessuno spazio tra i due <p>
+}
+
+.item-text p {
+  margin: 0;
+  padding: 0;
+}

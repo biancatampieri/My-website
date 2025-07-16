@@ -1,0 +1,103 @@
+// Font settings
+$font-heading: "Righteous", sans-serif;
+$font-body: "Montserrat", sans-serif;
+
+// Base font sizes
+$font-size-base: 1.125rem; // 18px
+$font-size-xs: 1rem;       // 16px
+
+// Heading sizes - Desktop (default)
+$h1-size: 4rem;     // 64px
+$h2-size: 3.2rem;   // 51.2px
+$h3-size: 2.56rem;  // 41px
+$h4-size: 2.05rem;  // 32.8px
+$h5-size: 1.64rem;  // 26.2px
+
+// Tablet sizes
+$h1-size-md: 3.2rem;
+$h2-size-md: 2.56rem;
+$h3-size-md: 2.05rem;
+$h4-size-md: 1.64rem;
+$h5-size-md: 1.32rem;
+
+// Mobile sizes
+$h1-size-sm: 2.4rem;
+$h2-size-sm: 1.92rem;
+$h3-size-sm: 1.54rem;
+$h4-size-sm: 1.23rem;
+$h5-size-sm: 1rem;
+
+.body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-heading;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.5em 0;
+  color: #000;
+}
+
+h1 { font-size: $h1-size; }
+h2 { font-size: $h2-size; }
+h3 { font-size: $h3-size; }
+h4 { font-size: $h4-size; }
+h5 { font-size: $h5-size; }
+
+// Breakpoint: Tablet (max-width: 1024px)
+@media (max-width: 1024px) {
+  h1 { font-size: $h1-size-md; }
+  h2 { font-size: $h2-size-md; }
+  h3 { font-size: $h3-size-md; }
+  h4 { font-size: $h4-size-md; }
+  h5 { font-size: $h5-size-md; }
+}
+
+// Breakpoint: Mobile (max-width: 768px)
+@media (max-width: 768px) {
+  h1 { font-size: $h1-size-sm; }
+  h2 { font-size: $h2-size-sm; }
+  h3 { font-size: $h3-size-sm; }
+  h4 { font-size: $h4-size-sm; }
+  h5 { font-size: $h5-size-sm; }
+}
+
+// Varianti corpo
+.body-bold {
+  @extend .body;
+  font-weight: 700;
+}
+
+.body-underline {
+  @extend .body;
+  text-decoration: underline;
+}
+
+.body-xs {
+  @extend .body;
+  font-size: $font-size-xs;
+  line-height: 1.5;
+}
+
+// Titolo alternativo
+.heading-h5 {
+  font-family: $font-heading;
+  font-size: $h5-size;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  margin: 0;
+
+  @media (max-width: 1024px) {
+    font-size: $h5-size-md;
+  }
+
+  @media (max-width: 768px) {
+    font-size: $h5-size-sm;
+  }
+}

@@ -1,41 +1,235 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bianca Tampieri - UX/UI Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bianca Tampieri</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-<body>
-   <header class="header">
-     <div class="logo">
-      <a href="#">LOGO</a>
-     </div>
-     <nav class="navbar">
-       <ul class="nav-links">
-         <li><a href="#home">Home</a></li>
-         <li><a href="#CV">CV</a></li>
-         <li><a href="#contact">Contatti</a></li>
-       </ul>
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css"> 
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+      <div class="container">
+        <!-- LOGO -->
+<a class="navbar-brand" href="#">
+  <img src="assets/img/Logo v1.png" alt="Logo" class="navbar-logo">
+        </a>
+
+        <!-- TOGGLER -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAV LINKS -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+  <li class="nav-item">
+    <a class="nav-link nav-link-style active" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-style" href="cv.html">CV</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link nav-link-style" href="#progetti">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a href="contatti.html" class="btn btn-secondary-sm">Contattami</a>
+  </li>
+</ul>
+        </div>
+      </div>
     </nav>
-    </header>
 
-    <section class="hero">
-      <div class="hero-container">
-      <!-- Colonna destra: Testo e CTA -->
-      <div class="hero-text">
-        <h1>Ciao, sono Bianca.</h1>
-        <p>Mi diverto smanettando con UX e UI.</p>
-        <button>Guarda il mio portfolio</button>
+    <main>
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Colonna sinistra: testo -->
+      <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column gap-4 hero-text-column">
+        <p class="paragraph body-bold">Ciao, sono Bianca.</p>
+        <h1>NEL MIO LABORATORIO DI UX/UI CERCO UNA SEMPLICITÀ CHE FUNZIONI.</h1>
+        <a href="#progetti" class="btn btn-primary align-self-start">Il mio portfolio</a>
       </div>
 
-    <!-- Colonna sinistra: Immagine -->
-      <div class="hero-image">
-        <img src="assets/img/Foto Bianca.jpg" alt="Foto di Bianca">
+      <!-- Colonna destra: immagine -->
+      <div class="col-md-6 text-center">
+        <div class="hero-image-wrapper mx-auto">
+          <img 
+            src="assets/img/Bianca_brutalist.png" 
+            alt="Hero image" 
+            class="w-100 h-100 object-fit-cover shadow" 
+            style="object-position: center top;">
+        </div>
       </div>
-    </section>
 
-</body>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- hero-section -->
+
+<!--BIO-->
+<section class="bio-section">
+  <div class="left-section">
+    <div class="inner-wrapper text-end">
+<div class="content-inner text-start">
+  <h2>Chi sono</h2>
+  
+  <div class="paragraph-group">
+    <p class="paragraph body">Mi chiamo Bianca, ho 30 anni e sono da sempre spinta dalla curiosità e da una forte passione per la creatività. </p>
+    <p class="paragraph body">Nel UX/UI design ho trovato il modo perfetto per unire l’apprendimento continuo in un contesto dinamico come il web alla possibilità di creare soluzioni visivamente accattivanti e funzionali. Amo questa disciplina perché richiede empatia, attenzione alle persone e aggiornamento costante.</p>
+    <p class="paragraph body">Nel tempo libero viaggio volentieri fuori dalle rotte turistiche e amo conoscere nuove culture. Sono profondamente legata alla mia terra, la Romagna, e credo che il dialogo tra tradizione e scoperta arricchisca il mio modo di vedere il mondo.</p>
+  </div>
+
+  <a href="cv.html" class="btn btn-primary align-self-start">Leggi il mio CV</a>
+</div>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <div class="inner-wrapper">
+<h2>Competenze</h2>
+
+<div class="items-wrapper">
+  <div class="item">
+    <div class="icon-box">
+      <img src="assets/img/schermo.png" alt="Icona Desktop" height="80">
+    </div>
+    <div class="item-text">
+      <p class="paragraph body-bold">Formazione continua sui software</p>
+      <p class="paragraph body">Ogni strumento richiede un uso costante per essere utilizzato al meglio.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="icon-box">
+      <img src="assets/img/calendario.png" alt="Icona Calendario" height="80">
+    </div>
+    <div class="item-text">
+      <p class="paragraph body-bold">Organizzazione e pianificazione</p>
+      <p class="paragraph body">Disegnare UX e UI richiede una buona organizzazione del tempo e tante checklist.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="icon-box">
+      <img src="assets/img/user research.png" alt="Icona Ricerca utente" height="80">
+    </div>
+    <div class="item-text">
+      <p class="paragraph body-bold">Ricerca utente e test</p>
+      <p class="paragraph body">Fondamentale in UX sono l'attenzione all'utente e ai dati.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!--PROGETTI-->
+<section class="py-0 progetti-section" id="progetti">
+  <div class="container py-5">
+    <h2>Portfolio progetti</h2>
+    <div class="row g-4">
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina grafica.jpg" class="card-img-top" alt="Anteprima progetto 1">
+           <div class="card-body">
+              <h5 class="card-title">Grafica</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina Copywriting.jpg" class="card-img-top" alt="Anteprima progetto 2">
+           <div class="card-body">
+              <h5 class="card-title">Copywriting</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina Copywriting.jpg" class="card-img-top" alt="Anteprima progetto 2">
+           <div class="card-body">
+              <h5 class="card-title">Discovery</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina Copywriting.jpg" class="card-img-top" alt="Anteprima progetto 2">
+           <div class="card-body">
+              <h5 class="card-title">Discovery</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina Copywriting.jpg" class="card-img-top" alt="Anteprima progetto 2">
+           <div class="card-body">
+              <h5 class="card-title">Discovery</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card custom-card">
+          <img src="assets/img/Copertina Copywriting.jpg" class="card-img-top" alt="Anteprima progetto 2">
+           <div class="card-body">
+              <h5 class="card-title">Discovery</h5>
+              <a href="#" class="btn btn-secondary-sm">Visualizza progetto</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!--FOOTER-->
+
+<footer class="bg-dark text-light py-5">
+  <div class="container text-center">
+    <h5 class=text-light>MI TROVI ANCHE QUI</h5>
+    <div class="d-flex justify-content-center gap-3 mb-3">
+<a href="https://www.linkedin.com/in/biancatampieri/" class="text-light" target="_blank" rel="noopener noreferrer">
+  <i class="bi bi-linkedin fs-1"></i>
+</a>
+<a href="https://github.com/biancatampieri" class="text-light" target="_blank" rel="noopener noreferrer">
+  <i class="bi bi-github fs-1"></i>
+</a>
+    </div>
+    <div class="body-xs text-light">©2025 Bianca Tampieri</div>
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
 </html>
