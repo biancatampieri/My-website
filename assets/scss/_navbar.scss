@@ -2,6 +2,7 @@
 @use 'typography' as *;
 
 .custom-navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -61,4 +62,8 @@
   display: inline-flex;
   align-items: center;
   height: calc(1.5em + 0.75rem + 2px); // simile al nav-link
+}
+
+.navbar-collapse.show {
+  background-color: $color-light;
 }
