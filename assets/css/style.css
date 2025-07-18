@@ -11977,6 +11977,10 @@ footer {
   padding: 3rem 0;
 }
 
+main {
+  overflow: visible !important;
+}
+
 .btn-primary {
   background-color: #dc0073 !important;
   color: #fff !important;
@@ -12195,6 +12199,10 @@ footer {
   width: 100%;
   max-width: 100%;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .custom-card {
@@ -12210,12 +12218,22 @@ footer {
 .custom-card .card-body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.custom-card .card-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 .custom-navbar {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1020;
@@ -12272,6 +12290,10 @@ footer {
   display: inline-flex;
   align-items: center;
   height: calc(1.5em + 0.75rem + 2px);
+}
+
+.navbar-collapse.show {
+  background-color: #f4f4f4;
 }
 
 form.form-custom input.form-control,
